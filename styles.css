@@ -10,14 +10,23 @@
 body {
 	font-family: 'Audiowide', cursive;
 }
+
 .title {
 	font-size: 4rem;
 	text-align: center;
 }
 
-.card {
+/* Container Structure */
+.container {
 	display: flex;
-	flex-direction: column;
+	flex-flow: row wrap;
+}
+
+/* Card Structure */
+.card {
+	flex: 1;
+	display: flex;
+	flex-flow: column wrap;
 	justify-content: space-between;
 	align-items: center;
 	padding: 1rem;
@@ -36,6 +45,11 @@ body {
 	font-size: 1.25rem;
 }
 
+.card__title {
+	font-size: 2rem;
+}
+
+/* Card Skins */
 .card--light {
 	background-color: var(--light-white);
 	color: var(--light-green);
@@ -44,4 +58,33 @@ body {
 .card--dark {
 	background-color: var(--dark-black);
 	color: var(--dark-red);
+}
+
+/* Media Queries */
+@media screen and (min-width: 700px) {
+	.title {
+		font-size: 4.5rem;
+	}
+
+	.card__title {
+		font-size: 2.125rem;
+	}
+
+	.card__text {
+		font-size: 1.375rem;
+	}
+}
+
+@media screen and (min-width: 1000px) {
+	.title {
+		font-size: 5rem;
+	}
+
+	.card__title {
+		font-size: 2.25rem;
+	}
+
+	.card__text {
+		font-size: 1.5rem;
+	}
 }
