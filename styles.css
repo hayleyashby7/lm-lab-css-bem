@@ -7,6 +7,14 @@
 	--dark-gray: #383838;
 }
 
+body {
+	font-family: 'Audiowide', cursive;
+}
+.title {
+	font-size: 4rem;
+	text-align: center;
+}
+
 .card {
 	display: flex;
 	flex-direction: column;
@@ -22,6 +30,10 @@
 
 .card__image {
 	max-width: 12.5rem;
+}
+
+.card__text {
+	font-size: 1.25rem;
 }
 
 .card--light {
