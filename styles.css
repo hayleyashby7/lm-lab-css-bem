@@ -1,19 +1,26 @@
 :root {
-	--light-blue: #aedffa;
 	--light-white: #fdfcf0;
 	--light-green: #455732;
 	--dark-black: #000000;
 	--dark-red: #ff6666;
-	--dark-gray: #383838;
+	--wars-yellow: #ffe81f;
 }
 
 body {
 	font-family: 'Audiowide', cursive;
+	background-color: #000000;
 }
 
-.title {
+/* Title Structure */
+.title-structure {
 	font-size: 4rem;
 	text-align: center;
+}
+
+/* Title Skins */
+.title {
+	color: var(--dark-black);
+	text-shadow: -0.125rem 0.125rem 0 var(--wars-yellow), 0.125rem 0.125rem 0 var(--wars-yellow), 0.125rem -0.125rem 0 var(--wars-yellow), -0.125rem -0.125rem 0 var(--wars-yellow);
 }
 
 /* Container Structure */
@@ -33,7 +40,7 @@ body {
 	margin: 1rem;
 	border: 0.0625rem solid #ccc;
 	border-radius: 0.625rem;
-	box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.26);
+	box-shadow: 0 0.125rem 0.5rem #ffe81f;
 	text-align: center;
 }
 
