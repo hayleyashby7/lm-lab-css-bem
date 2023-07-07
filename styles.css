@@ -1,7 +1,35 @@
-/* You can delete / re-write this img class  */
-
-img {
-    max-width: 200px;
+:root {
+	--light-blue: #aedffa;
+	--light-white: #fdfcf0;
+	--light-green: #455732;
+	--dark-black: #000000;
+	--dark-red: #ff6666;
+	--dark-gray: #383838;
 }
 
-/* Happy coding! */
+.card {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem;
+	margin: 1rem;
+	border: 0.0625rem solid #ccc;
+	border-radius: 0.625rem;
+	box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.26);
+	text-align: center;
+}
+
+.card__image {
+	max-width: 12.5rem;
+}
+
+.card--light {
+	background-color: var(--light-white);
+	color: var(--light-green);
+}
+
+.card--dark {
+	background-color: var(--dark-black);
+	color: var(--dark-red);
+}
