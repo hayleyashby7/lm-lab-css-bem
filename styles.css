@@ -4,6 +4,8 @@
 	--dark-black: #000000;
 	--dark-red: #ff6666;
 	--wars-yellow: #ffe81f;
+	--rebel-orange: #ff9661;
+	--rebel-blue: #001d57;
 }
 
 body {
@@ -27,11 +29,12 @@ body {
 .container {
 	display: flex;
 	flex-flow: row wrap;
+	justify-content: flex-start;
 }
 
 /* Card Structure */
 .card {
-	flex: 1;
+	flex: 0 1 25%;
 	display: flex;
 	flex-flow: column wrap;
 	justify-content: space-between;
@@ -40,7 +43,7 @@ body {
 	margin: 1rem;
 	border: 0.0625rem solid #ccc;
 	border-radius: 0.625rem;
-	box-shadow: 0 0.125rem 0.5rem #ffe81f;
+	box-shadow: 0 0.125rem 0.5rem var(--wars-yellow);
 	text-align: center;
 }
 
@@ -73,6 +76,11 @@ body {
 	color: var(--dark-red);
 }
 
+.card--rebel {
+	background-color: var(--rebel-blue);
+	color: var(--rebel-orange);
+}
+
 /* Button Skins */
 .acceptBtn {
 	background-color: var(--light-green);
@@ -82,6 +90,11 @@ body {
 .dangerBtn {
 	background-color: var(--dark-red);
 	color: var(--dark-black);
+}
+
+.alertBtn {
+	background-color: var(--rebel-orange);
+	color: var(--rebel-blue);
 }
 
 /* Media Queries */
@@ -110,5 +123,8 @@ body {
 
 	.card__text {
 		font-size: 1.5rem;
+	}
+	.container {
+		justify-content: center;
 	}
 }
