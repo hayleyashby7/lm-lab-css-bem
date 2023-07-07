@@ -56,6 +56,12 @@ body {
 	font-size: 2rem;
 }
 
+.card__button {
+	border: none;
+	padding: 0.875rem 1.25rem;
+	cursor: pointer;
+}
+
 /* Card Skins */
 .card--light {
 	background-color: var(--light-white);
@@ -65,6 +71,17 @@ body {
 .card--dark {
 	background-color: var(--dark-black);
 	color: var(--dark-red);
+}
+
+/* Button Skins */
+.acceptBtn {
+	background-color: var(--light-green);
+	color: var(--light-white);
+}
+
+.dangerBtn {
+	background-color: var(--dark-red);
+	color: var(--dark-black);
 }
 
 /* Media Queries */
